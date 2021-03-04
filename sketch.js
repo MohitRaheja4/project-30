@@ -63,10 +63,11 @@ slingshot.display();
     stone.display();
     ground.display();
    strokeWeight(0);
-    text("Drag the hexagon and release it towards the block ",10,10);
-    keyPressed();
+    text("Drag the hexagon and release it towards the block ",10,10); 
    mouseDragged()
 mouseReleased()
+    keyPressed();
+
     fill(88,141,124);
     b1.display();
     b2.display();
