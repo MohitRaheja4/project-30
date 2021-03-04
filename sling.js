@@ -12,7 +12,7 @@ class sling{
         World.add(world,this.chain);
     }
      attach(body,bodyA){
-        this.sling.bodyA = body;
+        this.chain.bodyA = body;
     }
     
 
