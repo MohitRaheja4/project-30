@@ -11,7 +11,7 @@ class sling{
         this.chain=Constraint.create(op)
         World.add(world,this.chain);
     }
-     attach(body,bodyA){
+     attach(body){
         this.chain.bodyA = body;
     }
     
