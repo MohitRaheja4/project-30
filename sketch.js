@@ -108,7 +108,13 @@ slingshot.display();
     ground2.display();
     ground3.display();
 }
-
+function keyPressed()
+{
+    if(keyCode===32)
+    {
+        slingshot.attach(stone.body)
+    }
+}
 function mouseDragged(){
     Matter.Body.setPosition(stone.body, {x: mouseX , y: mouseY});
 }
@@ -117,10 +123,4 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
-function keyPressed()
-{
-    if(keyCode===32)
-    {
-        slingshot.attach(stone.body)
-    }
-}
+
