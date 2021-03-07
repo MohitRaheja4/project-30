@@ -63,10 +63,8 @@ slingshot.display();
     stone.display();
     ground.display();
    strokeWeight(0);
-    text("Drag the hexagon and release it towards the block ",10,10); 
-   mouseDragged()
-mouseReleased()
-    keyPressed();
+    text("Drag the hexagon and release it towards the block                press space bar to reattach the polygon ",10,10); 
+  
 
     fill(88,141,124);
     b1.display();
@@ -110,17 +108,17 @@ mouseReleased()
     ground2.display();
     ground3.display();
 }
+
+}
+function mouseDragged(){
+    Matter.Body.setPosition(stone.body, {x: mouseX , y: mouseY});
+}
 function keyPressed()
 {
     if(keyCode===32)
     {
         slingshot.attach(stone.body)
     }
-}
-function mouseDragged(){
-    Matter.Body.setPosition(stone.body, {x: mouseX , y: mouseY});
-}
-
 
 function mouseReleased(){
     slingshot.fly();
